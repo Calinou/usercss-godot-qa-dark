@@ -22,7 +22,6 @@
     --red-800: #991b1b;
     --red-900: #7f1d1d;
     --green-500: #22c55e;
-    --green-600: #16a34a;
     --green-700: #206020;
     --green-800: #166534;
     --light-blue-200: #bae6fd;
@@ -135,6 +134,11 @@
     color: var(--red-400);
   }
 
+  .qa-nav-sub .qa-nav-sub-list .qa-nav-sub-hot .qa-nav-sub-link {
+    /* We need `!important` here as the base theme uses it too. */
+    color: var(--red-400) !important;
+  }
+
   .form-control,
   .qa-form-light-button,
   .qa-a-select-button,
@@ -231,6 +235,8 @@
   .top-divider,
   .donut-masthead .page-title,
   .qa-q-list-item,
+  .qa-part-a-form .qa-a-form,
+  .qa-part-a-form .qa-a-form h2,
   .qa-voting,
   .qa-tag-link,
   .qa-part-q-view,
@@ -255,10 +261,30 @@
     filter: invert(90%) hue-rotate(180deg);
   }
 
-  .qa-tag-link:hover {
-    background-color: var(--gray-700);
+  /* Pagination */
+
+  .qa-page-links-list > li > a,
+  .qa-page-links-list > .disabled > span, .qa-page-links-list > .disabled > span:hover {
+    background-color: var(--gray-800);
+    border-color: var(--gray-600);
     color: var(--light-blue-200);
   }
+
+  .qa-page-links-list > .active > span,
+  .qa-page-links-list > .active > span:hover {
+    background-color: var(--light-blue-900);
+    border-color: var(--light-blue-900);
+  }
+
+  .qa-tag-link:hover,
+  .qa-page-links-list > li > a:hover,
+  .qa-page-links-list > li > a:focus {
+    background-color: var(--gray-700);
+    border-color: var(--gray-500);
+    color: var(--light-blue-200);
+  }
+
+  /* Answer counts */
 
   .qa-a-count {
     color: var(--green-500);
@@ -268,6 +294,11 @@
   .qa-a-count-zero {
     color: var(--red-400);
     border-color: var(--red-900);
+  }
+
+  .qa-a-count-selected {
+    color: white;
+    background-color: var(--green-800);
   }
 
   /* Present on the admin interface. */
