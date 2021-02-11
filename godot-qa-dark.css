@@ -41,8 +41,18 @@
     color: var(--gray-200);
   }
 
+  .navbar,
+  .navbar a {
+    /* Prevent white-to-black fade during loading. */
+    transition: none;
+  }
+
   .qa-footer {
     color: var(--gray-200);
+  }
+
+  .text-muted {
+    color: var(--gray-300);
   }
 
   a,
@@ -72,7 +82,8 @@
     color: var(--red-200);
   }
 
-  .navbar-nav > li > a, .navbar-nav > li > a:hover,
+  .navbar-nav > li > a,
+  .navbar-nav > li > a:hover,
   .navbar-nav > li > a:active,
   .navbar-nav > li > a:focus {
     background: none;
@@ -154,6 +165,9 @@
   .qa-feed,
   .qa-sidebar,
   .navbar-nav > li > a.navbar-user-img,
+  .navbar-nav > li > a.navbar-login-button,
+  #login-dropdown-menu,
+  #login-dropdown-menu li .span-or,
   .qa-nav-sub .qa-nav-sub-list > li.active > a,
   .qa-nav-sub .qa-nav-sub-list > li.active > a:hover,
   .qa-nav-sub .qa-nav-sub-list > li > a:hover,
@@ -170,6 +184,8 @@
     color: var(--gray-200);
   }
 
+  .navbar-nav > li > a.navbar-login-button:hover,
+  .navbar-nav > li > a.navbar-login-button:focus,
   .qa-form-light-button:hover,
   .qa-form-light-button:focus {
     background-color: var(--gray-600);
@@ -264,7 +280,8 @@
   /* Pagination */
 
   .qa-page-links-list > li > a,
-  .qa-page-links-list > .disabled > span, .qa-page-links-list > .disabled > span:hover {
+  .qa-page-links-list > .disabled > span,
+  .qa-page-links-list > .disabled > span:hover {
     background-color: var(--gray-800);
     border-color: var(--gray-600);
     color: var(--light-blue-200);
