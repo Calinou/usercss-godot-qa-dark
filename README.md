@@ -1,5 +1,15 @@
 # Dark theme UserCSS for Godot
 
+___
+
+**Note:** This userstyle is now deployed on the production instance. You don't
+have to install this userstyle if your OS/browser is configured to use a dark theme.
+On Firefox, you can install the
+[Dark Website Forcer](https://addons.mozilla.org/en-US/firefox/addon/dark-mode-website-switcher/)
+add-on to do this.
+
+___
+
 A dark theme for [Godot Engine Q&A](https://godotengine.org/qa/).
 
 ## Installation
