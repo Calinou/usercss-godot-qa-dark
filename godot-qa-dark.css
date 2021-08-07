@@ -178,6 +178,14 @@
     box-shadow: none;
   }
 
+  .wmd-preview pre code,
+  .qa-q-view-content pre code,
+  .qa-a-item-content pre code {
+    /* Matches the Highlight.js Obsidian theme. */
+    background-color: #282b2e !important;
+    color: var(--gray-200) !important;
+  }
+
   .qa-form-wide-button,
   .qa-form-tall-button {
     background-color: var(--light-blue-900);
